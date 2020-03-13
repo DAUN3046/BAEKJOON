@@ -1,9 +1,9 @@
-N = int(input()) #18
-num5 = N//5 #3
-num3 = N//3 #6
+N = int(input())
+num5 = N//5
+num3 = N//3
 numList = []
-for i in range(0, num5 + 1): #0~3
-    for j in range(0, num3 + 1): #0~6
+for i in range(0, num5 + 1):
+    for j in range(0, num3 + 1):
         calculate = 5*i + 3*j
         #print("i=", i, "j=", j, "calculate:", calculate)
         if calculate == N:
