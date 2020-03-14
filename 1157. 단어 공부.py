@@ -8,11 +8,15 @@ for i in range(len(word_list)):
     if word_list[i] in 'abcdefghijklmnopqrstuvwxyz':  # 소문자일 경우 대문자로 변환
         num = ord(word_list[i])
         word_list[i] = chr(num - 32)
-
 # print(word_list)
 
+#=======================================================================================================================
+
 for i in range(len(word_list)):  # 문자열의 길이만큼
-    count_list.append(word_list.count(word_list[i]))  # 문자의 개수를 리스트에 넣는다.
+    # count_list.append(word_list.count(word_list[i]))  # 문자의 개수를 리스트에 넣는다.
+    for j in range(len(word_list)):
+        count_list[j] += 1
+
 print("count_list:", count_list)  # 확인. 후에 지우기.
 many_word = max(count_list)
 
