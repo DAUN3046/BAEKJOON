@@ -1,5 +1,3 @@
-#수정 요망
-
 idx = 0  # 인덱스 변수
 count_list = []  # 문자개수리스트
 
@@ -11,8 +9,6 @@ for i in range(len(word_list)):
         num = ord(word_list[i])
         word_list[i] = chr(num - 32)
 # print(word_list)
-
-#=======================================================================================================================
 
 for i in range(len(word_list)):  # 문자열의 길이만큼
     # count_list.append(word_list.count(word_list[i]))  # 문자의 개수를 리스트에 넣는다.
