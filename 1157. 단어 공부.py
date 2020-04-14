@@ -1,34 +1,34 @@
-idx = 0  # 인덱스 변수
-count_list = []  # 문자개수리스트
-
 word = input().rstrip()  # 문자 입력
 word_list = list(word)  # 입력단어리스트화
+result_list = []
+cnt = 0
 
+# 소문자일 경우 대문자로 변환
 for i in range(len(word_list)):
-    if word_list[i] in 'abcdefghijklmnopqrstuvwxyz':  # 소문자일 경우 대문자로 변환
+    if word_list[i] in 'abcdefghijklmnopqrstuvwxyz':
         num = ord(word_list[i])
         word_list[i] = chr(num - 32)
-# print(word_list)
+# print("word_list:", word_list)
 
-for i in range(len(word_list)):  # 문자열의 길이만큼
-    # count_list.append(word_list.count(word_list[i]))  # 문자의 개수를 리스트에 넣는다.
-    for j in range(len(word_list)):
-        count_list[j] += 1
+# 딕셔너리 생성
+dic = {}
+for word in word_list:
+    dic[word] = 0
+for count in word_list:
+    dic[count] += 1
 
-print("count_list:", count_list)  # 확인. 후에 지우기.
-many_word = max(count_list)
+# print("dic:", dic)
 
-print("many_word:", many_word)  # 확인. 후에 지우기.
-print(many_word)  # 확인. 후에 지우기.
-idx = count_list.index(many_word)
-int(idx)
+result_list = list(dic.values()) # 빈도값들을 따로 리스트화
+mode = max(result_list) # 최빈값 저장
 
-keynum_count = count_list.count(many_word)  # 리스트 내 최빈값
-print("keynum_count:", keynum_count)  # 확인. 후에 지우기.
-print("========")  # 확인. 후에 지우기
+for i in range(len(result_list)): # 최빈값이 몇 개인지 세는 변수 cnt 채우기
+    if result_list[i] == mode:
+        cnt += 1
 
-# a의 아스키 코드는 97, A의 아스키 코드는 65이다.
-if many_word != keynum_count:
-    print("?")
-else:
-    print(word_list[idx])  # 아니면 그대로 출력
+# print("cnt:", cnt)
+
+if cnt == 1: # 최빈값이 1개이면
+    print(max(dic, key=dic.get)) #해당 값을 가져오기
+else: # 2개 이상이면
+    print("?") # 물음표 출력
