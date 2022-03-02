@@ -1,5 +1,4 @@
 def result(nun):
-    prize = 0
     sorted(nun)
     if len(set(nun)) == 1: # 셋 다 같은 눈
         return 10000 + nun[0] * 1000
@@ -10,8 +9,6 @@ def result(nun):
             return 1000 + nun[0] * 100
             # 1 1 2, 1 2 1, 2 1 1
         return 1000 + nun[2] * 100
-
-    return prize
 
 nun = list(map(int, input().split()))
 print(result(nun))
