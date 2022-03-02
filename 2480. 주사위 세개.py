@@ -7,7 +7,6 @@ def result(nun):
     else: # 두 개만 같은 눈
         if nun[0] == nun[1]:
             return 1000 + nun[0] * 100
-            # 1 1 2, 1 2 1, 2 1 1
         return 1000 + nun[2] * 100
 
 nun = list(map(int, input().split()))
