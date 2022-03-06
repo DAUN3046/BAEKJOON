@@ -1,34 +1,25 @@
-cnt = 0
-hapList = []
-hap = 0
+def era(N): # 에라토스테네스의 체
+    num, prime = [False for _ in range(N+1)], []
+    for i in range(2, N+1):
+        if num[i] == True: continue
+        prime.append(i)
+        for j in range(i*i, N+1, i):
+            num[j] = True
+    return prime
 
-M = int(input())  # M <=
-N = int(input())  # <= N
+m = int(input())
+n = int(input())
 
-primeNumberList = [i for i in range(1, 10001)]
-#print(primeNumberList)
-primeNumberList[0] = 0
-primeNumberList[3] = 0
-for i in range(2, 10000):
-    for j in range(1, 10000):
-        if primeNumberList[j] != (i+1) and primeNumberList[j] % (i+1) == 0:
-            primeNumberList[j] = 0
-#print(primeNumberList)
-
-primeNumberList2 = primeNumberList[M-1:N-1]
-print("primeNumberList2:", primeNumberList2)
-
-for i in range(len(primeNumberList2)):
-    if primeNumberList2[i] != 0:
-        hapList.append(primeNumberList2[i])
-
-print("hapList:", hapList)
-
-for i in range(len(hapList)):
-    hap += hapList[i]
-
-if len(hapList) == 0:
-    print(-1) #소수가 없는 경우
+if n == 1:
+    print(-1)
+elif era(n) == era(m) and era(n)[-1] == n: # 소수가 하나일 땐 그대로 출력
+    print(era(n)[-1])
+    print(era(n)[-1])
 else:
-    print(hap) #전체 합
-    print(hapList[0]) #최솟값
+    result = [i for i in era(n) if i >= m]  # 범위 내의 소수 리스트
+    # print("result list:", result)
+    if result: # 소수가 존재하면
+        print(sum(result))
+        print(result[0])
+    else: # 소수가 없으면
+        print(-1)
