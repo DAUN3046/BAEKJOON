@@ -1,29 +1,22 @@
-from fractions import Fraction
-from decimal import Decimal
-
 T = int(input())
 
 for test_case in range(T):
-    x1, y1, r1, x2, y2, r2 = map(Decimal, input().split())
-    r_before = ((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))**0.5
-    # r = Fraction('r_before**0.5')
-    print(r_before, r)
+    x1, y1, r1, x2, y2, r2 = map(float, input().split())
+    distance = float((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))**0.5
     #각 위치와 거리를 두 원의 꼭짓점과 반지름으로 생각
-    if x1 == x2 and y1 == y2: #두 원이 같을 때
-        if r1 == r2:  #거리가 같으면
-            print(-1) #모든 지점에 위치 가능하다
-        else: #거리가 다르면
-            print(0) #존재 불가능하다
-    else: #두 원의 꼭짓점이 다른 경우
-        if r == r1 - r2 or r == r2 - r1: #한 원이 다른 원을 포함할 때
-            print(0) #만나지 않는다
-
-        elif r + r1 == r2 or r + r2 == r1: #두 원이 내접할 때
-            print(1) #한 점에서 만난다
-
-        elif r > r1 + r2: #각 꼭짓점의 거리가 두 원의 반지름의 합보다 클 때
-            print(0) #만나지 않는다
-        elif r == r1 + r2: #'' 같을 때
-            print(1) #한 점에서 만난다
-        else:
+    if distance > r1 + r2: # 두 원이 만나지 않음
+        print(0)
+    elif distance == r1 + r2: # 두 원이 겹치지 않게 한 점에서 만남
+        print(1)
+    elif distance < r1 + r2: # 두 원이 교차하거나 포함됨
+        if (x1 == x2) & (y1 == y2):
+            if r1 == r2: # 두 원이 같음
+                print(-1)
+            else: # 포함관계로 만나지 않음
+                print(0)
+        elif distance == abs(r1 - r2): # 내접
+            print(1)
+        elif distance < abs(r1 - r2): # 포함되어서 만나지 않음
+            print(0)
+        else: # 두 원이 두 교점을 가짐
             print(2)
