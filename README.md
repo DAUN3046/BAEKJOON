@@ -63,7 +63,7 @@ https://www.acmicpc.net/
 
 # [엘리스 파이썬 알고리즘 심화 스터디(22.04 ~ 22.05)](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pulls)에서 푼 문제들
 > 중간부터 velog에도 풀이를 기록하게 되어 가독성이 더 좋은 velog 링크로 연결해둠. 스터디 레포에서도 확인 가능.
-- [1026. 보물] (https://velog.io/@daun3046/1026BOJPython-%EB%B3%B4%EB%AC%BC)
+- [1026. 보물](https://velog.io/@daun3046/1026BOJPython-%EB%B3%B4%EB%AC%BC)
 - [10773. 제로](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/39)
 - [10825. 국영수](https://velog.io/@daun3046/10825BOJPython-%EA%B5%AD%EC%98%81%EC%88%98)
 - [10828. 스택](https://velog.io/@daun3046/10828BOJPython-%EC%8A%A4%ED%83%9D)
