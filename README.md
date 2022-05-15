@@ -58,3 +58,21 @@ https://www.acmicpc.net/
 7568. 덩치
 8958. OX퀴즈
 9020. 골드바흐의 추측
+
+# [엘리스 파이썬 알고리즘 심화 스터디(22.04 ~ 22.05)](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pulls)에서 푼 문제들
+- 중간부터 velog에도 풀이를 기록하게 되어 가독성이 더 좋은 velog 링크로 연결해둠. 스터디 레포에서도 확인 가능.
+[1026. 보물] (https://velog.io/@daun3046/1026BOJPython-%EB%B3%B4%EB%AC%BC)
+[10773. 제로](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/39)
+[10825. 국영수](https://velog.io/@daun3046/10825BOJPython-%EA%B5%AD%EC%98%81%EC%88%98)
+[10828. 스택](https://velog.io/@daun3046/10828BOJPython-%EC%8A%A4%ED%83%9D)
+[10870. 피보나치수](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/21)
+[1110. 더하기사이클](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/18)
+[1181. 단어정렬](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/37)
+[1260. DFS와 BFS](https://velog.io/@daun3046/1260BOJPython-DFS%EC%99%80-BFS-28zr43f8)
+[17478. 재귀함수가 뭔가요](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/38)
+[1764. 듣보잡](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/44)
+[17910. joint Attack](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/22)
+[1977. 완전제곱수](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/19)
+[2606. 바이러스](https://velog.io/@daun3046/2606BOJPython-%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4)
+[2751. 수 정렬하기](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/40)
+[9012. 괄호](https://github.com/ManduTheCat/elice_algorithm_deepening_study/pull/31)
