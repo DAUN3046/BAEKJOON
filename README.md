@@ -48,6 +48,7 @@ https://www.acmicpc.net/
 - [2869. 달팽이는 올라가고 싶다](https://github.com/DAUN3046/BAEKJOON/blob/master/2869.%20%EB%8B%AC%ED%8C%BD%EC%9D%B4%EB%8A%94%20%EC%98%AC%EB%9D%BC%EA%B0%80%EA%B3%A0%20%EC%8B%B6%EB%8B%A4.py)
 - [2908. 상수](https://github.com/DAUN3046/BAEKJOON/blob/master/2908.%20%EC%83%81%EC%88%98.py)
 - [2941. 크로아티아 알파벳](https://github.com/DAUN3046/BAEKJOON/blob/master/2941.%20%ED%81%AC%EB%A1%9C%EC%95%84%ED%8B%B0%EC%95%84%20%EC%95%8C%ED%8C%8C%EB%B2%B3.py)
+- [3003. 킹, 퀸, 룩, 비숍, 나이트, 폰](https://github.com/DAUN3046/BAEKJOON/blob/master/3003.%20%ED%82%B9%2C%20%ED%80%B8%2C%20%EB%A3%A9%2C%20%EB%B9%84%EC%88%8D%2C%20%EB%82%98%EC%9D%B4%ED%8A%B8%2C%20%ED%8F%B0.py)
 - [3009. 네 번째 점](https://github.com/DAUN3046/BAEKJOON/blob/master/3009.%20%EB%84%A4%20%EB%B2%88%EC%A7%B8%20%EC%A0%90.py)
 - [3052. 나머지](https://github.com/DAUN3046/BAEKJOON/blob/master/3052.%20%EB%82%98%EB%A8%B8%EC%A7%80.py)
 - [3053. 택시 기하학](https://github.com/DAUN3046/BAEKJOON/blob/master/3053.%20%ED%83%9D%EC%8B%9C%20%EA%B8%B0%ED%95%98%ED%95%99.py)
